@@ -1,0 +1,9 @@
+{
+	"attributes": {
+		"InitEnabled": { "Bool": true },
+		"InitOrder": { "Float64": 0 },
+
+		"ExitEnabled": { "Bool": true },
+		"ExitOrder": { "Float64": 0 }
+	}
+}

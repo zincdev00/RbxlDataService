@@ -1,0 +1,9 @@
+{
+	"name": "DataService",
+	"globIgnorePaths": [
+		"*.spec.lua"
+	],
+	"tree": {
+		"$path": "src"
+	}
+}

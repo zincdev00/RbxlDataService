@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build",
+			"type": "shell",
+			"command": "./build.ps1",
+			"presentation": {
+				"echo": false,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": false,
+				"clear": true
+			}
+		}
+	]
+}
