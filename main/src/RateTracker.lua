@@ -17,14 +17,14 @@ end
 -- Updates the cooldown queue
 function RateTracker:Update()
 	local time = os.clock()
-	while self.Cooldowns:Count() > 0 and time - self.Cooldowns:Get(1) > self.COOLDOWN do
-		self.Cooldowns:Remove(1)
+	while self.Cooldowns:count() > 0 and time - self.Cooldowns:get(1) > self.COOLDOWN do
+		self.Cooldowns:remove(1)
 	end
 end
 
 -- Returns whether the cooldowns are over the limit
 function RateTracker:IsAvailable()
-	return self.Cooldowns:Count() < self:GetLimit()
+	return self.Cooldowns:count() < self:GetLimit()
 end
 
 -- Adds a value to the cooldowns

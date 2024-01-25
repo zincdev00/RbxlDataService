@@ -15,8 +15,8 @@ end
 
 -- Updates the request queue
 function RequestTracker:Update()
-	while self.Requests:Count() > 0 and self:IsAvailable() do
-		local request = self.Requests:Remove(1)
+	while self.Requests:count() > 0 and self:IsAvailable() do
+		local request = self.Requests:remove(1)
 		if not request.Cancel then
 			local attempts = 0
 			while attempts < self.MaxAttempts do
